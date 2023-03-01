@@ -6,7 +6,7 @@ const state ={
 
 module.exports.connect= function (done){
    const url ='mongodb://localhost:27017'
-   const dbname ='shoping'
+   const dbname ='collage'
 
    mongoclient.connect(url,(err,data)=>{
        if (err)  return done(err)
