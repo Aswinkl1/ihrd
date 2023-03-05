@@ -1,20 +1,28 @@
-const mongoclient =  require('mongodb').MongoClient 
 
-const state ={
-   db:null
-}
+const mongoose = require('mongoose');
 
-module.exports.connect= function (done){
-   const url ='mongodb://localhost:27017'
-   const dbname ='collage'
+mongoose.Promise = global.Promise;
 
-   mongoclient.connect(url,(err,data)=>{
-       if (err)  return done(err)
-       state.db=data.db(dbname)
-       done()
-   })
-}
+// Connect MongoDB at default port 27017. 
 
-module.exports.get=function(){
-   return state.db
-}
+ module.exports.connection= async function () {
+ try{
+  await mongoose.connect('mongodb://localhost:27017/collage');
+  console.log("Database connected");
+  
+
+ }
+ catch(err){
+  console.log(err)
+  console.log("Datatbase not connected")
+ }
+  
+ } 
+
+
+
+
+
+
+
+

@@ -7,9 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('./main/index');
 });
 
-router.get('/login',(req,res)=>{
+router.get('/student-login',(req,res)=>{
 
-  res.render('./login/login',{as:'aswin'});
+  res.render('./login/student-login',{as:'aswin'});
+})
+router.get('/teacher-login',(req,res)=>{
+
+  res.render('./login/teacher-login',{as:'aswin'});
 })
 
 

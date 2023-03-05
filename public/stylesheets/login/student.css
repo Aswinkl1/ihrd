@@ -58,3 +58,8 @@ color: #FFFFFF;
 font-style: normal;
     
 }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:hsl(0, 0%, 100%);
+    /* Firefox */
+  }
