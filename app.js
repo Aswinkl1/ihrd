@@ -5,15 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs = require('express-handlebars')
 var db =  require('./config/connection') 
-const passport = require('passport')
-const initializePassport = require('./config/passport-auth')
-const flash = require('express-flash')
+
 const session = require('express-session')
-  initializePassport(passport)
+
   
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var studentRouter = require('./routes/student');
 var adminRouter = require('./routes/admin');
 
 var app = express();
@@ -33,18 +31,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 db.connection()
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/admin', adminRouter);
-app.use(flash())
 app.use(session({
   secret:'secret',
   resave:false,
-  saveUninitialized:false
+  saveUninitialized:false,
+  cookie:{maxAge:60000}
 }))
 
-app.use(passport.initialize())
-app.use(passport.session())
+app.use('/', indexRouter);
+app.use('/student', studentRouter);
+app.use('/admin', adminRouter);
+
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

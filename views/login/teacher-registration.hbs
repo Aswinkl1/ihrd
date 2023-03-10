@@ -15,8 +15,14 @@
                  <p class="create ">Create New Teacher</p>
                </div>
     
-
-               <form action="student-register" method="post">
+                {{#if msg}}
+                
+              <div class="alert alert-warning alert-dismissible fade show " role="alert" >
+              <p>{{msg}}</p>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {{/if}} 
+               <form action="teacher-register" method="post">
                 <div class="form-group">
                   <label for="exampleInputEmail1" class="labelss">Enter name</label>
                   <input type="text" class="form-control input-form" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter name" name="name">
@@ -31,7 +37,7 @@
 
                   <div class="form-group">
                     <label for="exampleInputEmail1" class="labelss">phone</label>
-                    <input type="number"min=0 class="form-control input-form" id="exampleInputPass" onblur="" placeholder="Enter your mobile number" name="studentNumber"> 
+                    <input type="number"min=0 class="form-control input-form" id="exampleInputPass" onblur="" placeholder="Enter your mobile number" name="phoneNumber"> 
                   </div>
 
                 

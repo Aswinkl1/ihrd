@@ -1,89 +1,81 @@
-.login_box{
-    background: #634A7C;
-   
+:root{
+    --Base-color:#351F40;
+    --college-color:#FFF7F7;
+    --Login-box:#634A7C;
+    --paceholder-col:#917DAB;
+    --Login-btn:#8359AD;
+
+
+}
+
+.background{
+     background: var(--Base-color);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+
+     
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+  
+.login-box{
     width: 436px;
-    height: 305px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--Login-box);
+}
+
+.login-box form{
+    font-size: 20px;
+
+}
+
+.login-box .form-group{
+    margin-bottom: 12px;
+}
+
+.login-box form input[type="submit"]{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* User error */
+
+.User-error{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
-    margin: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 19px;
-}
-
-.all{
-    position: relative;
-    width: 100%;
-    height: 800px;
     
-    background: #351F40;
-    
-   
-
-}
-.collageid{
-    font-family: 'Inder';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22.2835px;
-    line-height: 32px;
-    color: #F5F5F5;
-    margin-top: 34px;
-    margin-left: 28px;
-}
-.collage-password{
-    font-family: 'Inder';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22.2835px;
-    line-height: 32px;
-    color: #F5F5F5;
-    margin-left: 28px;
-
-
 }
 
-.inp{
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.button{
-    border-radius: 14.7235px;
-    margin-top: 13px;
-    width: 166px;
-    height: 34px;
-    background: #8359AD;
+/* --User error*/
 
-     font-family: 'Inder';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23.4107px;
-    line-height: 19px;
-    color: #FFFDFD;
+.btn{
+    background-color: var(--Login-box);
+    margin-left: 10vh;
 }
-.button:hover{
-    background: #8359AD; 
-    color: #FFFDFD;
-}
+
+/* /College Logo/ */
+
 .heading{
-    margin-top: 143px;
-   
-    
-
-}
-.heading_style{
-    font-family: 'Inter';
-    font-style: normal;
-    margin-bottom: -9px;
-    font-size: 50px;
-    line-height: 73px;
-    color: #FFF7F7;
+    text-align: center;
+    color: var(--college-color);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.heading_style2{
-    font-family: 'IM FELL English SC';
-    font-style: normal;
-    font-size: 30.093px;
-    line-height: 24px;
-    color: #FFFEFE
+/* --// College logo*/
 
+/* Form-Label*/
+.form-label{
+    color: var(--college-color);
 }
+
+/* /--//Form-label/ */

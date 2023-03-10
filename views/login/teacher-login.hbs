@@ -1,52 +1,40 @@
+<link rel="stylesheet" href="/stylesheets/login/login.css">
+<body class="background">
 
-  <section>
+    <div class="content-wrapper"> 
 
-    <div class="container-fluid ">
         <div class="row">
-            <div class="all">
-                
-               <div class="text-center heading">
-                <h1 class="heading_style">
-                    IHRD
-                </h1>
-                <h1 class="heading_style2">
-                    COLLEGE
-                </h1>
-               </div>
-                <div class="login_box col-md-6  col-xl-3   ">
-                    <form action="" method="post">
-                        
-                        
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label collageid">Emailid</label><br>
-                            <input type="text" class="form-control inp " id="exampleFormControlInput1" placeholder="IHRD01234" oninput="this.value = this.value.toUpperCase()">
-                          </div>
-                          <div class="mb-3 ">
-                            <label for="exampleFormControlInput1" class="form-label collage-password"> Password</label><br>
-                            <input type="password" class="form-control inp " id="exampleFormControlInput1" placeholder="Enter your password">
-                          </div>
-                          <div class="mb-3 text-center">
-                            <button type="button" class="btn  button">LOGIN</button>
-                          </div>
-                    </form>
-    
-                </div>
+            <div class="heading">
+                <h1 class="ihrd">IHRD</h1>
+                <h6>C O L L E G E</h6>
             </div>
         </div>
-        
 
-        
+        <div class="login-box">
+            {{#if noUser}}
+               <div class="User-error text-danger text-center"><p>User not found</p></div>
+            {{/if}}
+            
+            {{#if passwordNotMatch}}
+                <div class="User-error text-danger text-center"><p>Incorrect password</p></div>
+            {{/if}}
+          
+          <form action="/teacher-login" method="post">
 
+            <div class="form-group">
+                <label class="form-label" for="id">Email ID</label>
+                <input class="form-control" placeholder="Enter your Email" type="text" id="college-id" name="email"    oninput="this.value = this.value.tolowerCase()">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="id">Password</label>
+                <input class="form-control" placeholder="Enter your password" type="password" id="college-pwd" name="password">
+            </div>
+
+                 <button class="btn w-50" type="submit">LOGIN</button>
+                 
+
+          </form>
+          </div>
 
     </div>
-  
-</section>
-   <link rel="stylesheet" href="/stylesheets/login/login.css" type="">
-
-  
-
-
-
-    
- 
- 
