@@ -39,7 +39,10 @@ let  studentSchema = new mongoose.Schema({
         default:new Date()
     },
     parentsNumber:Number,
-    studentNumber:Number
+    studentNumber:Number,
+    
+    year:Number,
+    
 
 
 

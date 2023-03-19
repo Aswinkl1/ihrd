@@ -5,7 +5,6 @@ const dbTeach = require('../model/teacher-schema')
 const bycrpt = require('bcrypt')
 
 
-
 module.exports={
     addstudent:async(studentDetails)=>{
         // console.log(studentDetails)

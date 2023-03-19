@@ -31,5 +31,10 @@ router.get('/destroy',(req,res)=>{
   res.redirect('./teacher-login')
 })
 
+router.get('/attendence',(req,res)=>{
+  res.render('./teacher/student-attendence')
+})
+
+router.post('/attendence',teachercontol.studentAttandance)
 router.get('/teacher',teachermiddleware.teacherAuthentication,teachercontol.teacherHomePage)
 module.exports = router;

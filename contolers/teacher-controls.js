@@ -74,6 +74,29 @@ module.exports={
 
     teacherHomePage:(req,res)=>{
         res.render('./teacher/teacher-index',{name:req.session.user.name})
+    },
+
+    studentAttandance:(req,res)=>{
+    details=req.body
+    let  subject= details.subject,
+      date1= new Date()
+      
+      data={
+        
+        course:details.course,
+        year:details.year,
+       
+
+      }
+      data.sub=subject
+      data[subject] =[{date:date1,absentees:details.name}]
+
+      teacherhelper.studentAttandance(data).then(()=>{
+        res.redirect('/attendence')
+
+      })
+
+
     }
     
     

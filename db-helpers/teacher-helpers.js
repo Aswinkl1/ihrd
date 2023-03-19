@@ -2,6 +2,7 @@ const password1 = require('../config/password')
 const mail = require('../config/mail')
 var dbStud = require('../model/student-schema')
 const dbTeach = require('../model/teacher-schema')
+const dbAttandance = require('../model/attendence-schema')
 const bycrpt = require('bcrypt')
 
 
@@ -42,5 +43,45 @@ module.exports={
            })
           
         })
+    },
+    studentAttandance:(details)=>{
+        // console.log(details);
+       let sub =details.sub
+        return new Promise((resolve,reject)=>{
+            try{
+
+            
+            dbAttandance.attendence.exists({course:details.course,year:details.year}).then((result)=>{
+                if(result){
+                    dbAttandance.attendence.findById(result).then( async(data)=>{
+                        if(data[sub]){
+                            console.log("i am inside");
+                        }else{
+                            console.log(details.sub);
+                        //    console.log( details[sub]);
+                            data[sub]=details[sub] 
+                            console.log(data[sub]);
+                           await data.save()
+                            console.log(data);
+                            resolve()
+                            
+                            
+                        }
+                    })
+                    
+               
+                }else{
+                    console.log("i am not  inside result");
+                    dbAttandance.attendence.create(details)
+                    resolve()
+                }
+            })
+        }catch(e){
+            console.log(e);
+        }
+    }
+        
+        )
+
     }
 }

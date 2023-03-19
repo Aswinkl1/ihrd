@@ -23,6 +23,7 @@ let teacherSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true
+        
     },
     admin:Boolean
 })
