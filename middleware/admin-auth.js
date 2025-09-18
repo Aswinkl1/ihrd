@@ -6,4 +6,5 @@ module.exports={
             res.redirect('/teacher-login')
         }
     }
+    
 }

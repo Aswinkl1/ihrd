@@ -1,0 +1,44 @@
+<section>
+    <div class=" w-50 mx-auto mt-5">
+        <form action="/admin/mail" method="post" >
+
+            <div class="mt">
+                    <label  class="labelss" >course</label>
+                    <select class="form-control input-form" name="course" id="course">
+                        <option value="">Select </option>
+                        <option value="Bsc Computer science">Bsc Computer science</option>
+                        <option value="Bsc Electronics">Bsc Electronics</option>
+                        <option value="Bcom">Bcom</option>
+                      </select>
+                </div>
+  <div class="mt ">
+                          <label  class="labelss" >year</label><br><br>
+                          <select class="form-control input-form" name="year" id="year" onchange="getcollageid(value)">
+                              <option  value="">Select </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                      </div>
+
+subject <br><br>
+<input type="text" name="subject" id="subject">
+                      <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+  </div>
+
+
+  <div class="mt ">
+                          <label  class="labelss" >filter</label><br><br>
+                          <select class="form-control input-form" name="fee" id="fee" onchange="getcollageid(value)">
+                              <option  value="1">All </option>
+                              <option value="0"> fee not paid</option>
+                             
+                            </select>
+                      </div>
+
+  <input type="submit" value="submit">
+        </form>
+    </div>
+</section>

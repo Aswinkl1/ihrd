@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 let studentAttendence = new mongoose.Schema({
     course:String,
-    year:Number,
+    sem:Number,
     
 },{strict:false})
 

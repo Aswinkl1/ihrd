@@ -1,0 +1,100 @@
+ <script src="/javascripts/internals.js"></script>
+
+
+<section>
+
+     <div class="h1 w-25 mx-auto">Add subject</div>
+    <div class="mt-4 h4">
+        <form action="add-subject" method="post">
+{{!-- 
+           <div class="h3 mt-4 mx-auto w-50">
+
+            enter the course 
+            <input type="text" class="ms-5" name="course" id=""><br>
+
+            enter the year
+            <input type="number" name="sem" id=""><br>
+            enter the subject
+            <input type="text" name="subject" id=""><br>
+            </div>
+            <input type="submit" value="submit" class="btn btn-primary" > --}}
+
+
+
+          
+  <div class="form-group mx-auto w-50">
+    <label for="exampleInputEmail1">Enter the course</label>
+    <input type="text" class="form-control" name="course" id="" aria-describedby="" placeholder="">
+    
+  </div>
+  <div class="form-group mx-auto w-50">
+    <label for="exampleInputPassword1">Enter the sem</label>
+    <input type="text" class="form-control" name="sem" id="" placeholder="">
+  </div>
+
+  <div class="form-group mx-auto w-50">
+    <label for="exampleInputPassword1">Enter the subject</label>
+    <input type="text" class="form-control" placeholder=""  name="subject">
+  </div>
+  <div class="mx-auto w-25 mt-5">
+  <button type="submit" class="btn btn-primary ">Submit</button>
+
+  </div>
+</form>
+        
+    </div>
+</section>
+
+
+<hr>
+<br>
+<section>
+    <div class="h1 w-25 mx-auto">Remove subject</div>
+    <div>
+        <form action="remove-subject" method="post">
+        
+           
+           <div class="mt-5 mx-auto w-25 h4">
+                    <label  class="labelss  mx-auto " >Enter the course</label><br><br>
+                    <select class="form-control input-form  mx-auto" name="course" id="course">
+                        <option value="">Select </option>
+                        <option value="Bsc Computer science">Bsc Computer science</option>
+                        <option value="Bsc Electronics ">Bsc Electronics</option>
+                        <option value="Bcom">Bcom</option>
+                      </select>
+                </div>
+
+
+  <div class="mt mx-auto w-25 h4">
+                          <label  class="labelss" >Enter the sem</label><br><br>
+                          <select class="form-control input-form" name="sem" id="sem" onchange="getsubject()">
+                              <option  value="">Select </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+
+                            </select>
+                      </div>
+            
+            
+            
+            <div class="mt mx-auto w-25 h4">
+                    <label  class="labelss" >Enter the subject</label><br><br>
+                    <select class="form-control input-form" name="subject" id="subject" >
+                        <option value="">Select </option>
+                        
+                      </select>
+            </div>
+            <div class="mx-auto w-25 mt-3">
+
+            
+            <input type="submit" value="submit" class="btn btn-primary " >
+            </div>
+          </form>
+    </div>
+</section>
+
+

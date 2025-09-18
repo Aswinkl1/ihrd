@@ -1,0 +1,211 @@
+ {{!-- <script src="/javascripts/internals.js"></script>
+
+
+ <form action="/internal" method="post">
+<div class="w-25 mx-auto mt-5">
+  <div class="mt">
+                    <label  class="labelss" >course</label>
+                    <select class="form-control input-form" name="course" id="course">
+                        <option value="">Select </option>
+                        <option value="Bsc Computer science">Bsc Computer science</option>
+                        <option value="Bsc Electronics">Bsc Electronics</option>
+                        <option value="Bcom">Bcom</option>
+                      </select>
+                </div>
+  <div class="mt ">
+                          <label  class="labelss" >year</label><br><br>
+                          <select class="form-control input-form" name="sem" id="sem" onchange="getcollageid(value)">
+                              <option  value="">Select </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                      </div>
+  <div class="mt " >
+                          <label  class="labelss" >collage id</label> <br><br>
+                          <select class="form-control input-form" name="collageid" id="collageid123" onchange="getsubject()" >
+                                <option  value="" class="collageid123" >select </option>
+                               
+                            </select>
+                      </div>
+
+                      <div class="mt">
+                    <label  class="labelss" >subject</label>
+                    <select class="form-control input-form" name="subject" id="subject" onchange="getMark(value)">
+                        <option value="">Select </option>
+                        
+                      </select>
+                </div>
+      <br><br><br>
+
+
+      Test1 : <input type="number" name="test1" id="test1" > <br>
+
+      Test2 : <input type="number" name="test2" id="test2"> <br>
+
+      attendence : <input type="number" name="attendence" id="attendence"> <br>
+
+      assignment : <input type="number" name="assignment" id="assignment"> <br>
+
+      seminar : <input type="number" name="seminar" id="seminar"> <br>
+
+      outoff :<input type="number" name="outoff" id="outoff"> <br>
+
+      total:<input type="number" name="total" id="total"> <br>
+
+      <input type="submit" value="submit">
+</div>
+ </form>
+<script>
+  
+    
+
+</script> --}}
+
+
+
+{{!-- hfdskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkj --}}
+
+
+<script src="/javascripts/internals.js"></script>
+ <link rel="stylesheet" href="/stylesheets/internal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    
+        <div class="col-lg-2">
+            <button class="circle-prof">
+              <img class="rounded-circle " alt="avatar1" src="." />
+            </button>
+         </div>
+
+         <div class="row mt-5 d-flex justify-content-center selection-bar ">
+
+          <!-- <div class="dropdown col-md-1">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Course
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">BSC Computer science</a></li>
+                <li><a class="dropdown-item" href="#">BSC Electronics</a></li>
+                <li><a class="dropdown-item" href="#">B.com with CA</a></li>
+              </ul> 
+              
+
+
+            </div>
+
+
+
+      
+            <div class="dropdown col-md-1">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Year
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1st Year</a></li>
+                <li><a class="dropdown-item" href="#">2nd Year</a></li>
+                <li><a class="dropdown-item" href="#">3rd year</a></li>
+              </ul>
+            </div>
+      
+            <div class="dropdown col-md-1">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Subject
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">(option)</a></li>
+                <li><a class="dropdown-item" href="#">(option)</a></li>
+                <li><a class="dropdown-item" href="#">(option)</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown col-md-2">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  College ID
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">CZAUSCS007</a></li>
+                  <li><a class="dropdown-item" href="#">CZAUSCS032</a></li>
+                  <li><a class="dropdown-item" href="#">CZAUSCS012</a></li>
+                </ul>
+              </div>
+      </div>  -->
+
+       
+
+      <div class="row mt-5 d-flex justify-content-center selection-bar ">
+      <h2>INTERNAL MARK</h2>
+      <form class="form" action="/internal">
+      <div class="col-md-4 d-flex ">
+
+       
+           
+       
+        <select class="form-control input-form" name="course" id="course">
+          <option value="">Course</option>
+           {{#each course}}
+          <option value="{{this.course}}">{{this.course}}</option>
+           {{/each}}
+        </select>
+       
+        <select class="form-control input-form" name="sem" id="sem" onchange="getcollageid(value)">
+          <option value="">Sem</option>
+          <option value="1">1</option>
+           <option value="2">2</option>
+            <option value="3">3</option>
+             <option value="4">4</option>
+              <option value="5">5</option>
+               <option value="6">6</option>
+          
+        </select>
+
+        <select class="form-control input-form" name="collageid" id="collageid123" onchange="getsubject()">
+          <option value="">collage id</option>
+         
+        </select>
+
+        <select class="form-control input-form"name="subject" id="subject" onchange="getMark(value)">
+          <option value="">subject</option>
+         
+        </select>
+
+      </div>
+
+
+
+        <label class="form-label" for="typeNumber">Test 1</label>
+        <input value="0" type="number" id="typeNumber" class="form-control"  name="test1">
+
+        <label class="form-label mt-2" for="typeNumber">Test 2</label>
+        <input value="0" type="number" id="typeNumber" class="form-control"  name="test2"/ >
+
+        <label class="form-label mt-2" for="typeNumber">Attendance</label>
+        <input value="0" type="number" id="typeNumber" class="form-control" name="attendence"/>
+
+        <label class="form-label mt-2" for="typeNumber">Assignment</label>
+        <input value="0" type="number" id="typeNumber" class="form-control" name="assignment"/>
+
+        <label class="form-label mt-2" for="typeNumber">Seminar</label>
+        <input value="0" type="number" id="typeNumber" class="form-control" name="seminar" />
+
+        <label class="form-label mt-2" for="typeNumber">Outoff</label>
+        <input value="0" type="number" id="typeNumber" class="form-control" name="outoff" />
+
+        <label class="form-label mt-2" for="typeNumber">Total</label>
+        <input value="0" type="number" id="typeNumber" class="form-control" name="total" />
+        
+
+        <input class="mt-3 submit-btn " type="submit" value="update">
+        
+    </form>
+    
+      </div>
+          
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>

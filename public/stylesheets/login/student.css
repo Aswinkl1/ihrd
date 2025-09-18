@@ -29,17 +29,15 @@ font-style: normal;
 font-weight: 400;
 font-size: 23px;
 line-height: 49px;
-
-
-
 color: #FFFFFF;
 }
 
 .input-form{
 background: #B26FC2;
-
 color: #FFFFFF;
 }
+
+
 .input-form:focus{
     background: #B26FC2;
     color: #FFFFFF;
@@ -51,6 +49,7 @@ color: #FFFFFF;
     width: 24em;
     margin-top: 7em;
 }
+
 .btn-create{
     background: #A822BE;
     font-size: larger;
@@ -58,6 +57,7 @@ color: #FFFFFF;
 font-style: normal;
     
 }
+
 
  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color:hsl(0, 0%, 100%);

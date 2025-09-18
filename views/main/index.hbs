@@ -1,175 +1,245 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/line-awesome.min.css">
+<link rel="stylesheet" href="/stylesheets/main/style.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/ec5b5f237d.css" crossorigin="anonymous">
+
+
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-   <link rel="stylesheet" href="/stylesheets/main/style.css">
+
 <!-- Navigation bar-->
 
 <nav class="navbar navbar-expand-md flex-column-lg  navedit fixed-top" >
-    <div class="container flex-lg-column bar">
-    
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<div class="container flex-lg-column bar">
 
-        <div class="collapse navbar-collapse" id="nav">
-             <ul class="navbar-nav flex-lg-column">
-            <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#course" class="nav-link">Course</a>
-            </li>
-            <li class="nav-item">
-                <a href="#facilities" class="nav-link">Facilities</a>
-            </li>
-            <li class="nav-item">
-                <a href="#events" class="nav-link">Events</a>
-            </li>
-            <li class="nav-item">
-                <a href="#staff" class="nav-link">Staff</a>
-            </li>
-            <li class="nav-item">
-                <a href="#alumnis" class="nav-link">Alumnis</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact us</a>
-            </li>
-             </ul>
-         </div>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="nav">
+         <ul class="navbar-nav flex-lg-column">
+        <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#course" class="nav-link">Course</a>
+        </li>
+        <li class="nav-item">
+            <a href="#facilities" class="nav-link">Facilities</a>
+        </li>
+         
+        <li class="nav-item">
+            <a href="#staff" class="nav-link">Staff</a>
+        </li>
+        <li class="nav-item">
+            <a href="#alumnis" class="nav-link">Alumnis</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact us</a>
+        </li>
+         </ul>
+     </div>
+
+</div>
+</nav>
 
 <!--//Navigation  bar-->
 
 <!--Content wrapper-->
 <div id="content-wrapper">
 
- <section id="home">
-          
+<section id="home">
+      
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <img class="ihrd-image" src="./images/1671454522604.png" alt="not working">
+<div class="row">
+    <div class="col">
+        <img class="ihrd-image" src="/images/home/{{home}}" alt="not working">
 
-           <a href="login-select"><button class="login-btn">Login</button></a> 
+      <a href="/login-select">  <button class="login-btn">Login</button></a>
 
-        </div>
     </div>
+</div>
 
-    <div class="row">
-        <h1 class="welcome-header">Welcome to College of applied science kuzhalmannam,<br> kottayi</h1>
-    </div>
+<div class="row">
+    <h1 class="welcome-header">Welcome to College of applied science kuzhalmannam,<br> kottayi</h1>
+</div>
 
-    <div class="row">
-        <p class=" text-light">
-            The College of Applied Science, Kuzhalmannam, Kottayi managed by Institute
-            of Human Resources Development (IHRD), a Kerala Government Undertaking is situated in Kottayi
-            village near by Kottayi Panchayat Office in Palakkad district. This is a self-financing institution
-            and is affiliated to the University of Calicut. Established in July 2008 – the
-            college offers UG programs in B.Sc. Electronics, B. Sc. Computer Science and B Com with Computer
-            Applicationunder Choice Based Credit Semester System (CUCBCSS) .
-        </p>
-    </div>
+<div class="row">
+    <p class=" text-light">
+        The College of Applied Science, Kuzhalmannam, Kottayi managed by Institute
+        of Human Resources Development (IHRD), a Kerala Government Undertaking is situated in Kottayi
+        village near by Kottayi Panchayat Office in Palakkad district. This is a self-financing institution
+        and is affiliated to the University of Calicut. Established in July 2008 - the
+        college offers UG programs in B.Sc. Electronics, B. Sc. Computer Science and B Com with Computer
+        Applicationunder Choice Based Credit Semester System (CUCBCSS) .
+    </p>
+</div>
 
-    </section>
-
-<!--Courses-->
-    <section id="course" class="full-height">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-    
-                    <div>
-                        <h2>Bsc Computer science</h2>
-                    </div>
-                    <div class="courses p-4 bg-base rounded-4 shadow-effect">
-                        <div class="iconbox rounded-3">
-                            <i class="fa-sharp fa-solid fa-computer"></i>
-                        </div>
-                        <p class="text-light course-dis mt-2">Candidates who have passed (eligible <br> for higher studies)
-                            the HSE or an
-                            <br> equivalent
-                            examination with <br> Mathematics / Statistics / Computer Science/ <br> Computer Application/
-                            Information Technology/
-                            Additionalb <br> Mathematics as one of the subjects <br> are eligible for admission.
-                        </p>
-                    </div>
-    
-                </div>
-
-
-                <div class="col-md-4">
-    
-                    <div>
-                        <h2>Bsc Electronics</h2>
-                    </div>
-                    <div class="courses p-4 bg-base rounded-4 shadow-effect">
-                        <div class="iconbox rounded-3">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <p class="text-light course-dis mt-2">Students who have  studied <br> Electronics/Physics/Mathematics
-                             as one of the optional subjects 
-                            at <br> Higher Secondary Examination level <br> and passed (eligible for higher studies) 
-                            are eligible for <br> admission. <br>
-                            (U.O.No.GA I/J1/2924/2005(2) dated 28.07.2005)
-                        </p>
-                    </div>
-    
-                </div>
-
-
-                <div class="col-md-4">
-    
-                    <div>
-                        <h2>B.com with computer Application</h2>
-                    </div>
-                    <div class="courses p-4 bg-base rounded-4 shadow-effect">
-                        <div class="iconbox rounded-3">
-                            <i class="fa-solid fa-money-check"></i>
-                        </div>
-                        <p class="text-light course-dis mt-2">A pass (eligible for higher studies) in the 
-                            Higher Secondary Examination or its equivalent,
-                             with at least one Commerce subject, is the eligibility for admission to the B.Com. Degree programme. 
-                             Candidates who have not taken at least one Commerce subject for Higher Secondary or
-                              an equivalent examination should get at least 45% (in 6 subjects) in that examination 
-                              to become eligible to seek admission to B.Com programme. A concession of 5% will be given to OBC/OEC candidates.
-                              The SC/ST candidates need get only a pass (eligible for higher studies (U.O.No. 
-                            GA1/A2/1658/2007 dated 28.2.2008)
-                        </p>
-                    </div>
-    
-                </div>
-                
-
-            </div>
-        </div>
-    </section>
-<!--//Courses-->
-
-<!--Department-->
-
-<section id="facilities" class="full-height">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-2">
-                <div class="facility">
-                    <div class="facility-img">
-                        <img src="./images/computerLab.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-         </div>
-    </div>
 </section>
 
-<!--// Department-->
+<!--Courses-->
+<section id="course" class="full-height">
+    <div class="container">
+        <div class="row gy-3">
+            {{#each course}}
+               
+           
+            <div class="col-md-4">
+
+                <div>
+                    <h2>{{this.name}}</h2>
+                </div>
+                <div class="courses p-4 bg-base rounded-4 shadow-effect">
+                    <div class="iconbox rounded-3">
+                        <i class="fa-sharp fa-solid fa-computer"></i>
+                    </div>
+                    <p class="text-light course-dis mt-2">{{this.description}}
+                    </p>
+                </div>
+
+            </div>
+
+
+            
+
+            {{/each}}
+            
+        </div>
+    </div>
+</section>
+<!--//Courses-->
+
+<!-- Facilities-->
+<section id="facilities" class="full-height">
+<div class="container p-5 d-grid gap-4">
+    {{#each faciltities}}
+       <h1></h1>
+   
+<div class="facl d-lg-flex gap-3">
+    <img class="Img-csLab rounded-3" src="/images/home/{{this.image}}" alt="not-working">
+    <p class="fac-discrip">{{this.description}}</p>
+    
+</div>
+ {{/each}}
+
+
+</div>
+</section>
+<!--//Facilities-->
+
+<!--Staffs-->
+<section id="staff" class="full-height ">
+<div class="container">
+    <div class="row ">
+{{#each staff}}
+   
+
+        <div class="col">
+
+            <div class="rounded-4 staff-base text-center p-2">
+                <img class="rounded-4 staff-img" src="/images/teacher-image/{{this.image}}" alt="image not available">
+                <div class="para">
+                    <h6>{{this.name}}</h6>
+                    {{!-- <p class="text-light">{{this.name}}</p> --}}
+                </div>
+            </div>
+        </div>
+
+        
+{{/each}}
+        
+
+    </div>
+</div>
+</section>
+<!--//Staffs-->
+
+<!--Alumnis-->
+<section id="alumnis" class="full-height">
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="alumnis-base rounded-3 p-2">
+                    <img class="alumni-img" src="/images/home/chandhu.jpg" alt="">
+                    <div class="dics-alumnis">
+                        <p class="text-light"><br> <span class="fw-bold"> Chandhu</span></p>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="alumnis-base rounded-3 p-2">
+                    <img class="alumni-img" src="/images/home/shifas.jpg" alt="">
+                    <div class="dics-alumnis">
+                        <p class="text-light"><br> <span class="fw-bold">Shifas</span></p>
+            
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="alumnis-base rounded-3 p-2">
+                    <img class="alumni-img" src="/images/home/ajith.jpg" alt="">
+                    <div class="dics-alumnis">
+                        <p class="text-light"><br> <span class="fw-bold"> Ajith</span></p>
+            
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<!--//Alumnis-->
+
+<!--Contact us-->
+
+<section id="contact" class="full-height bg-dark">
+<div class="container">
+
+    <div class="row justify-content-center text-center pb-4">
+
+        <div class="cont-header col-lg-8 pb-0">
+          <h6 class="text-brand">Contact us</h6>
+          <h2 class="text-header">You can sent you Querries to us</h2>
+        </div>
+  
+      </div>
+  
+      
+        <form action="#" class="row offset-md-4  gy-3 form-set">
+
+              <div class="form-group ">
+                   <input type="text" class="form-control" placeholder="Enter your name...">
+             </div>
+             <div class="form-group">
+               <input type="email" class="form-control" placeholder="Enter your e-mail...">
+              </div>
+             <div>
+               <textarea name="" class="form-control col-12 d-grid" placeholder="Enter your message"></textarea>
+             </div>
+
+             <div>
+               <button type="submit" value="submit" class="sub-button rounded-2 ">Send</button>
+             </div>
+
+           </form>
+  
+
+    </div>
+</div>
+</section>
+
+<!--// Contact us-->
 
 </div>
 <!--//Content wrapper-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ec5b5f237d.js" crossorigin="anonymous"></script>
-<script src="/javascripts/main.js"></script>
-<script src="/javascripts/aos.js"></script>

@@ -1,0 +1,67 @@
+:root{
+   --Base-color:#AF8ED8;
+   --Button-color:#7A57B4;
+   --Hover-btn:#53397E;
+   --Logo-color:#fff;
+   
+}
+
+body{
+    background-color: var(--Base-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.shadow-effect{
+
+    transition: all 0.5s;
+
+
+}
+.shadow-effect{
+
+    transition: all 0.5s;
+
+
+}
+.shadow-effect:hover{
+    box-shadow: -4px 4px 0 0 var(--Button-color);
+}
+
+/* Button styles*/
+.btn{
+    background-color: var(--Button-color);
+    width: max-content;
+    height: 138px;
+    color: var(--Logo-color);
+    justify-content:stretch;
+}
+.btn:hover{
+    background-color: var(--Hover-btn);
+    color: var(--Logo-color);
+
+}
+
+.iconbox{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+/*--//Button styles*/
+
+/* Form-group style common*/
+
+.form-group{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    
+}
+
+/*--//Form-group style common*/

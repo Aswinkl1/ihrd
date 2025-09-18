@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+ const mongoose = require('mongoose')
 
 
 let addressSchema = new mongoose.Schema({
@@ -40,8 +40,10 @@ let  studentSchema = new mongoose.Schema({
     },
     parentsNumber:Number,
     studentNumber:Number,
+    sem:Number,
+    internals:[]
     
-    year:Number,
+    
     
 
 

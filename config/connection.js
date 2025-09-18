@@ -12,6 +12,8 @@ mongoose.Promise = global.Promise;
   
 
  }
+
+ 
  catch(err){
   console.log(err)
   console.log("Datatbase not connected")
